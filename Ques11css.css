@@ -1,0 +1,30 @@
+.top{
+    padding-left: 130px;
+    padding-right:130px;
+    background-color: #222222;
+    padding-bottom: 20px;
+}
+li{
+    display: inline;
+    margin: 5px;
+}
+body{
+    background-color: #303334;
+    margin:0 30px 0 30px;
+
+}
+.main{
+    background-color: whitesmoke;
+    text-align: center;
+}
+nav{
+    background-color: black;
+    color: antiquewhite;
+    padding: 5px;
+
+}
+footer{
+    background-color: black;
+    color: antiquewhite;
+
+}

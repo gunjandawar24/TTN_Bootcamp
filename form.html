@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="design_form.css">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <header style="padding-top: 1%;">
+        <nav>
+            <li><span class="a">TO THE NEW</span></li>
+            <li><span class="b">Quick help</span></li>
+            <li><span class="b">Home</span></li>
+        </nav>
+    </header><br><br>
+    <hr>
+
+<br>
+<br>
+
+<div class="form1">
+        <div class="c">
+                <h1 style="margin-left: 30px">Bug Report</h1>
+        </div>
+            <div>
+            <form class="mainform" action="">
+
+                Title:<sup>*</sup> <br>
+                 <input style="width: 95%;height: 20px;" class="oval" type="text" name="title" required><br><br>
+
+                Description:<sup>*</sup> <br>
+                <textarea style="height:50px; width: 95%" class="oval" name="Description" required></textarea><br><br>
+
+                Operating system: <br>
+                    <select class="oval" style="width: 95% ;height: 30px;background-color: rgb(13,255,183);font-size:15px" name="OS">
+                    <option value="Windows XP">Windows XP</option>
+                    <option value="ubuntu">Ubuntu</option>
+                    <option value="windows 7">Windows 7</option>
+                    <option value="windows 8">Windows 8</option>
+                    </select>
+                    <br><br>
+
+                Product:<sup>*</sup> <br>
+                <select class="oval" style="width: 95% ;height: 30px;background-color: rgb(13,255,183);font-size:15px" name="product" required>
+                    <option value="monitor">Formoid</option>
+                    <option value="printer">Printer</option>
+                    <option value="mouse">Mouse</option>
+                    <option value="keyboard">Keyboard</option>
+                </select>
+                <br><br>
+
+                Version:<sup>*</sup> <br>
+                <input class="oval" style="width:25%;height:20px" type="text" name="title" required><br><br>
+
+
+                License : <br>
+                <input type="radio" name="vehicle1" value="status1"> Free
+                <span style="float: right; margin-right: 30%"><input type="radio" name="vehicle1" value="status2"> Business</span>
+                <br><br>
+
+              Severity: <br>
+                <select class="oval" style="width: 95% ;height: 30px;background-color: rgb(13,255,183);font-size:15px" name="product" required>
+                    <option value="critical">Critical</option>
+                    <option value="minor">Minor</option>
+                    <option value="high">High</option>
+                    <option value="low">Low</option>
+                </select>
+                <br><br>
+
+                Attachments:<br>
+                <input class="style1" type="file" name="uploadedfile" "> <br><br>
+                <div style="background-color: rgba(0, 0, 0, 0.16); margin-left:-8.5%;border-bottom-left-radius: 6px;border-bottom-right-radius: 6px">
+                <input type="submit" value="Send" style="float: right;background-color: rgb(13,255,183);padding: 5px; border-radius: 5px;margin-right: 5%"><br><br>
+                </div>
+            </form>
+
+            </div>
+            </div>
+</body>
+</html>
