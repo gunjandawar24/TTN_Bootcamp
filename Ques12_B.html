@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+<br>
+<div class="container">
+    <div class="row" style="display: inline;">
+        <span style="font-size: 25px;color:  #106dff;margin-left: 5%">TO THE NEW</span>
+        <span style="float: right;margin-left: 10px;color:  #106dff">Quick help</span>
+        <span style="float: right;margin-left: 10px;color:  #106dff">Home</span>
+    </div>
+</div>
+<hr>
+<div class="container">
+    <div class="row" style="margin-right: 25%;margin-left: 35%;">
+        <div style="border: 2px solid grey;border-radius: 10px;border-color: rgba(0, 0, 0, 0.16)">
+            <form>
+                <div style="background-color: rgba(0, 0, 0, 0.16);color: white;padding: 10px">
+                    <h4>Bug Report</h4>
+                </div>
+                <div style="padding: 10px">
+                    <div class="form-group">
+                        Title:*<br>
+                        <input type="text" class="form-control " required>
+                    </div>
+
+                    Description : <br>
+                    <textarea name="description" class="form-control"></textarea><br>
+
+                    Opeating system :<br>
+                    <select style="background-color: rgb(13,255,183);color: black" name="Os" class="form-control btn-info "><br>
+                        <option value="Windows XP">Windows XP</option>
+                        <option value="ubuntu">Ubuntu</option>
+                        <option value="windows 7">Windows 7</option>
+                        <option value="windows 8">Windows 8</option>
+                    </select><br>
+
+                    Product<br>
+                    <select style="background-color: rgb(13,255,183);color: black" name="Product" class="form-control btn-info ">
+                        <option value="monitor">Formoid</option>
+                        <option value="printer">Printer</option>
+                        <option value="mouse">Mouse</option>
+                        <option value="keyboard">Keyboard</option>
+                    </select><br>
+
+                    Version :*<br>
+                    <input type="text"  class="form-control" required>
+                    <br>
+
+                    License:<br>
+                    <input type="radio" name="licence">Free
+                    <span style="float: right; margin-right: 30%"><input type="radio" name="licence">Bussiness</span>
+                    <br><br>
+
+                    Severity:<br>
+                    <select style="background-color: rgb(13,255,183);color: black" class="form-control btn-info "><br>
+                        <option value="critical">Critical</option>
+                        <option value="minor">Minor</option>
+                        <option value="high">High</option>
+                        <option value="low">Low</option>
+                    </select><br>
+
+                    <div class="form-group">
+                        Attachments:
+                        <input type="file" class="form-control-file"  style="border: 1px solid;border-radius: 5px;">
+                    </div>
+                </div>
+                <footer style="background-color: rgba(0, 0, 0, 0.16); height: 50px;padding: 10px">
+                    <button class="btn btn-info" type="submit" style="float: right">Submit</button>
+                </footer>
+            </form>
+        </div>
+    </div>
+</div>
+
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>
