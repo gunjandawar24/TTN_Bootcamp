@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        var emplist=[
+
+            {
+                name:'Gunjan',
+                age:20,
+                salary:1000,
+                dob:'24/12/1998'
+            },
+            {
+                name:'Gaurav',
+                age:21,
+                salary:10000,
+                dob:'28/1/1998'
+            },
+            {
+                name:'Himanshi',
+                age:41,
+                salary:500,
+                dob:'26/2/1996'
+            }
+
+        ];
+        document.write("<b>Ques 1 : </b>")
+        document.write("<br>");
+        var i;
+        for(i in emplist)
+        {
+            if(emplist[i].salary>5000)
+            {
+                document.write("Salary greater tham 5000 :"+emplist[i].name);
+                document.write("<br><br>");
+            }
+        }
+        document.write("<b>Ques 2</b>")
+        document.write("<br>");
+        for(i in emplist)
+        {
+            if(emplist[i].age<20)
+            {
+                document.write("\n Age less than 20:"+emplist[i].name);
+                document.write("<br>");
+            }
+
+            if(emplist[i].age>20&&emplist[i].age<40)
+            {
+                document.write("\n Age between 20 and 40: \n "+emplist[i].name);
+                document.write("<br>");
+            }
+            if(emplist[i].age>40&&emplist[i].age<100)
+            {
+                document.write("Age between 40 and 100 : \n"+emplist[i].name);
+                document.write("<br><br>");
+            }
+
+        }
+        document.write("<b>Ques 3</b>")
+        document.write("<br>");
+
+        for(i in emplist) {
+            if(emplist[i].salary<1000&&emplist[i].age>20)
+            {
+                document.write("Name="+emplist[i].name)
+                document.write("<br>");
+
+                document.write("Old Salary="+emplist[i].salary);
+                document.write("<br>");
+
+                emplist[i].salary=emplist[i].salary*5;
+
+
+                document.write("New Salary="+emplist[i].salary)
+                document.write("<br>");
+            }
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>

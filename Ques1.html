@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JS Demo</title>
+    <script type="text/javascript">
+        function si()
+        {
+            let amt=prompt("Please enter amount");
+            let ir=prompt("Please enter interest rate");
+            let t=prompt("Please enter no. of years");
+
+                        let s = amt*ir*t
+                        document.write("<h1>Your Simple Interest is : " + s +"</h1");
+        }
+    </script>
+</head>
+<body>
+<form>
+    <input type="button" onclick="si()" value="Click Here For Simple Interest !" style="margin-left:40%;margin-top: 50px">
+</form>
+</body>
+</html>
+

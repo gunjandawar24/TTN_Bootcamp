@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        function palindrome() {
+            let x = prompt("Please enter the String to validate", "");
+            var len = x.length;
+            for (var i = 0; i < len / 2; i++) {
+                if (x[i] != x[len - 1 - i]) {
+                    document.write("<br> No, It's not a palindrome string.");
+                } else {
+                    document.write("<br> Yes, It's a palindrome string.");
+                }
+                return true;
+            }
+        }
+    </script>
+</head>
+<body>
+<form>
+    <input type="button" onclick="palindrome()" value="Click Here For String validation !" style="margin-left:40%;margin-top: 50px">
+</form>
+</body>
+</html>
+
+
+
+

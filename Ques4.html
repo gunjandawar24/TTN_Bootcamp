@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+
+        console.log("--Shallowing Copying:--");
+        //When you have a nested object (or array) and you copy it, nested objects inside that object will not be copied, since they are only pointers / references. Therefore, if you change the nested object, you will change it for both instances, meaning you would end up doing a shallow copy again
+        var a={foods:{dinner:'Pasta'}};
+        var b={...a};
+        b.foods.dinner='Pizza';
+        console.log(b.foods.dinner);  //Pizza
+        console.log(a.foods.dinner);  //Pizza
+
+
+        //Deep Copying:
+        console.log("--Deep Copying--");
+        var a1={foods:{dinner:'Pasta'}};
+        var b1={foods:{...a1.foods}};
+        b1.foods.dinner='pizza';
+        console.log(b1.foods.dinner)  //pizza
+        console.log(a1.foods.dinner)  //Pasta
+        console.log(" ");
+        //OR
+        let b2=JSON.parse(JSON.stringify(a1));
+        b2.foods.dinner='pizza';
+        console.log(b2.foods.dinner)  //pizza
+        console.log(a1.foods.dinner)  //Pasta
+
+    </script>
+</head>
+<body>
+</body>
+</html>
+
+
+<!--// var obj1= {Firstname:"Gunjan",lastname:"Dawar",age:"24"}-->
+<!--// var clonedobj1={...obj1}-->
+<!--// clonedobj1.Firstname="Himanshi";-->
+<!--// console.log(clonedobj1.Firstname);   //Himanshi-->
+<!--// console.log(obj1.Firstname);         //Gunjan-->
