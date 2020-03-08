@@ -1,0 +1,39 @@
+plugins {
+	id 'org.springframework.boot' version '2.2.5.RELEASE'
+	id 'io.spring.dependency-management' version '1.0.9.RELEASE'
+	id 'java'
+}
+
+group = 'com.example'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '1.8'
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	compile 'com.fasterxml.jackson.dataformat:jackson-dataformat-xml'
+	//Ques10 Configure actuator in your project to check the health of application
+	compile group: 'org.springframework.boot', name: 'spring-boot-starter-actuator'
+	testImplementation('org.springframework.boot:spring-boot-starter-test') {
+		exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
+	}
+}
+
+test {
+	useJUnitPlatform()
+}
+
+
+
+
+
+
+
+//compile group: 'io.springfox', name: 'springfox-swagger2', version: '2.9.2'
+//compile group: 'io.springfox', name: 'springfox-swagger-ui', version: '2.9.2'
+//compile group: 'org.springframework.boot', name: 'spring-boot-starter-hateoas'
+//compile group: 'org.springframework.data', name: 'spring-data-rest-hal-browser'
