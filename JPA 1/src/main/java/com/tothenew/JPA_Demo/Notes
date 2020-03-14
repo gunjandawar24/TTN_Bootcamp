@@ -1,0 +1,4 @@
+Internally spring (spring data) is invoking the the methods of Entity mananger class (methods of employee repo like save,delete)
+Entity manager performs related db operations on the db
+
+Watch from 27
